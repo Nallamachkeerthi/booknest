@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center mb-4">✏️ Edit Book</h2>
+<form action="/edit" method="POST" class="w-50 mx-auto">
+    <!-- Hidden original values -->
+    <input type="hidden" name="old_title" value="{{ title }}">
+    <input type="hidden" name="old_author" value="{{ author }}">
+    <input type="hidden" name="old_genre" value="{{ genre }}">
+    <input type="hidden" name="old_cover" value="{{ cover }}">
+
+    <!-- Editable fields -->
+    <div class="mb-3">
+        <label class="form-label">Title:</label>
+        <input type="text" name="title" class="form-control" value="{{ title }}" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Author:</label>
+        <input type="text" name="author" class="form-control" value="{{ author }}" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Genre:</label>
+        <input type="text" name="genre" class="form-control" value="{{ genre }}" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Cover Image URL:</label>
+        <input type="text" name="cover" class="form-control" value="{{ cover }}">
+    </div>
+    <button type="submit" class="btn btn-success w-100">Update Book</button>
+</form>
+{% endblock %}
+
