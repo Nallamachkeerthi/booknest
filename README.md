@@ -31,17 +31,7 @@ You can:
 🗂️ Project Structure
 
 
-booknest/
-│
-├── app.py               # Main Flask app
-├── books.csv            # Book data (Title, Author, Genre, Cover)
-├── requirements.txt     # Python dependencies
-├── render.yaml          # Deployment config
-├── templates/           # HTML templates
-│   ├── home.html
-│   ├── books.html
-│   ├── add_book.html
-│   └── base.html
+<pre> ```bash booknest/ │ ├── app.py # Main Flask app ├── books.csv # Book data (Title, Author, Genre, Cover) ├── requirements.txt # Python dependencies ├── render.yaml # Deployment config ├── templates/ # HTML templates │ ├── home.html │ ├── books.html │ ├── add_book.html │ └── base.html ``` </pre>
 
 
 
